@@ -9,7 +9,7 @@ This is the official implementation of MemVR!
 </div>
 
 ## 🔥 Update
-* [2024-10-1]: ⭐️ Paper of MemVR uploaded. Check out [this link](https://www.google.com/) for details.
-* [2024-00-00]: 🚀🚀 Codes will soon be released.
+* [2024-10-7]: ⭐️ Paper of MemVR uploaded. Check out [this link](https://www.google.com/) for details.
+* [2024-11-14]: 🚀🚀 Codes will be released after one month.
 
 ## 🕹️ Usage
