@@ -12,4 +12,7 @@ This is the official implementation of MemVR!
 * [2024-10-7]: ⭐️ Paper of MemVR uploaded. Check out [this link](https://arxiv.org/pdf/2410.03577) for details.
 * [2024-11-14]: 🚀🚀 Codes will be released after one month.
 
+## 🎯 Overview
+![MemVR](figures/bigfig.pdf)
+
 ## 🕹️ Usage
