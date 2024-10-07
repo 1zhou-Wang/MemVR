@@ -13,6 +13,6 @@ This is the official implementation of MemVR!
 * [2024-11-14]: 🚀🚀 Codes will be released after one month.
 
 ## 🎯 Overview
-![MemVR](figures/bigfig.pdf)
+![MemVR](figures/bigfig.png)
 
 ## 🕹️ Usage
