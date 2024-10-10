@@ -1,4 +1,4 @@
-![caseA](https://github.com/user-attachments/assets/8aa4155a-9741-4445-bb6a-d9f7500b20ef)# Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
+# Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
 <!-- **Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models** -->
 This is the official implementation of MemVR!
 
@@ -19,9 +19,9 @@ This is the official implementation of MemVR!
 
 
 ## 📌 Examples
-![Case1](figures/caseA.jpg)
-*figure 5. Illustration of hallucination correction by our proposed VCD with two samples from LLaVA-Bench. Hallucinated objects from LVLM's regular decoding are highlighted in red.*
+![Case1](figures/caseA.png)
+*figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
 
-![Case2](figs/case_general.jpg)
-*figure 8. More examples from LLaVA-Bench of our proposed VCD for enhanced general perception and recognition capacities.*
+![Case2](figures/longcase.png)
+*figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
