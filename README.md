@@ -1,5 +1,8 @@
 # Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
 <!-- **Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models** -->
+
+This is the official implementation of MemVR!
+
 <div style='display:flex; gap: 0.25rem; '>
   <a href="https://huggingface.co/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
   <a href="LICENCE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
@@ -7,7 +10,6 @@
   <a href='https://www.google.com/'><img src='https://img.shields.io/badge/Zhihu-Markdown-blue'></a>
 </div>
 
-This is the official implementation of MemVR!
 <div align="center">
 <img src="assets/memvrlogo.png" width="25%">
 </div>
