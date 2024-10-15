@@ -3,17 +3,16 @@
 
 This is the official implementation of MemVR!
 
+<div align="center">
+<img src="assets/memvrlogo.png" width="25%">
+</div>
+
 <div style='display:flex; gap: 0.25rem; '>
   <a href="https://huggingface.co/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
   <a href="LICENCE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
   <a href="https://arxiv.org/abs/2410.03577"><img src="assets/Paper-Arxiv-orange.svg" ></a>
   <a href='https://www.google.com/'><img src='https://img.shields.io/badge/Zhihu-Markdown-blue'></a>
 </div>
-
-<div align="center">
-<img src="assets/memvrlogo.png" width="25%">
-</div>
-
 
 ## 🔥 Update
 * [2024-10-7]: ⭐️ Paper of MemVR uploaded. Check out [this link](https://arxiv.org/abs/2410.03577) for details.
