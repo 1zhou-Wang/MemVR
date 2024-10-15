@@ -19,7 +19,7 @@ This is the official implementation of MemVR!
 * [2024-11-14]: 🚀🚀 Codes will be released after one month.
 
 ## 🎯 Overview
-![MemVR](figures/bigfig.png)
+![MemVR](assets/bigfig.png)
 
 <div align="center">
 <strong>It’s a game-changer for effectiveness and efficiency.</strong>strong>
@@ -29,6 +29,8 @@ In contrast to previous methods, which primarily focus on eliminating biases of 
 Comprehensive experimental evaluations demonstrate that MEMVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks without incurring added time overhead.
 ## 🕹️ Usage
 
+## 🏅 Experiments
+![MemVR](assets/bigfig.png)
 
 ## 📌 Examples
 ![Case1](assets/caseA.png)
