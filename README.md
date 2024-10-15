@@ -4,7 +4,7 @@
   <a href="https://huggingface.co/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
   <a href="LICENCE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
   <a href="https://arxiv.org/pdf/2410.03577"><img src="assets/Paper-Arxiv-orange.svg" ></a>
-  <a href='https://www.google.com/'><img src='https://img.shields.io/badge/zhihu-Markdown-blue'></a>
+  <a href='https://www.google.com/'><img src='https://img.shields.io/badge/Zhihu-Markdown-blue'></a>
 </div>
 
 This is the official implementation of MemVR!
