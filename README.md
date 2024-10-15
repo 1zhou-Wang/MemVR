@@ -6,7 +6,7 @@
   <a href="LICENCE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
   <a href="https://arxiv.org/abs/2410.03577"><img src="assets/Paper-Arxiv-orange.svg" ></a>
   <a href='https://www.google.com/'><img src='https://img.shields.io/badge/Zhihu-Markdown-blue'></a>
-  <a title="Hits" target="_blank" href="https://github.com/1zhou-Wang/MemVR"><img src="https://hits.b3log.org/88250/Hits.svg"></a>
+  <a title="Hits" target="_blank" href="https://github.com/1zhou-Wang/MemVR"><img src="assets/Demo-ModelScope-brightgreen.svg" alt="Hits"></a>
 </div>
 
 <div align="center">
