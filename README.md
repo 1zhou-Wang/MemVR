@@ -21,7 +21,7 @@ This is the official implementation of MemVR!
 ![MemVR](figures/bigfig.png)
 
 <div align="center">
-**It’s a game-changer for effectiveness and efficiency.**
+<strong>It’s a game-changer for effectiveness and efficiency.</strong>strong>
 </div>
 
 In contrast to previous methods, which primarily focus on eliminating biases of language priors, MemVR seeks to replenish visual clues towards more evidential responses, which signifies the other side of the coin.
