@@ -27,15 +27,20 @@ This is the official implementation of MemVR!
 
 In contrast to previous methods, which primarily focus on eliminating biases of language priors, MemVR seeks to replenish visual clues towards more evidential responses, which signifies the other side of the coin.
 Comprehensive experimental evaluations demonstrate that MEMVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks without incurring added time overhead.
+
 ## 🕹️ Usage
 
 ## 🏅 Experiments
-![MemVR](assets/bigfig.png)
+![MemVR](assets/mmbench.png)
+*Figure 5. Results on MMBench. MemVR enhances comprehensive performance on diverse tasks.*
 
 ## 📌 Examples
 ![Case1](assets/caseA.png)
-*figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
+*Figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
+
+![MemVR](assets/cases2.png)
+*Figure 13: A case study comparing the levels of hallucination among various baselines.*
 
 ![Case2](assets/longcase.png)
-*figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
+*Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
