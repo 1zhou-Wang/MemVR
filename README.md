@@ -1,7 +1,7 @@
 # Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
 <!-- **Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models** -->
 <div style='display:flex; gap: 0.25rem; '>
-  <a href="https://huggingface.co/"><img src="https://huggingface.co/datasets/huggingface/" alt="Open in Spaces"></a>
+  <a href="https://huggingface.co/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
   <a href="LICENCE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
   <a href="https://arxiv.org/pdf/2410.03577"><img src="assets/Paper-Arxiv-orange.svg" ></a>
   <a href='https://www.google.com/'><img src='https://img.shields.io/badge/zhihu-Markdown-blue'></a>
@@ -9,7 +9,7 @@
 
 This is the official implementation of MemVR!
 <div align="center">
-<img src="figures/memvrlogo.png" width="30%">
+<img src="assets/memvrlogo.png" width="30%">
 </div>
 
 
@@ -24,9 +24,9 @@ This is the official implementation of MemVR!
 
 
 ## 📌 Examples
-![Case1](figures/caseA.png)
+![Case1](assets/caseA.png)
 *figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
 
-![Case2](figures/longcase.png)
+![Case2](assets/longcase.png)
 *figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
