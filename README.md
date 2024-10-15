@@ -9,7 +9,7 @@
 
 This is the official implementation of MemVR!
 <div align="center">
-<img src="assets/memvrlogo.png" width="30%">
+<img src="assets/memvrlogo.png" width="25%">
 </div>
 
 
