@@ -8,8 +8,6 @@
   <a href='https://www.google.com/'><img src='https://img.shields.io/badge/Zhihu-Markdown-blue'></a>
 </div>
 
-This is the official implementation of MemVR!
-
 <div align="center">
 <img src="assets/memvrlogo.png" width="25%">
 </div>
