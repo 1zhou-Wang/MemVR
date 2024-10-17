@@ -1,4 +1,10 @@
-# Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
+<div align=center>
+<img src="assets/memvrlogo.png" width="280px">
+</div>
+
+<h2 align="center"> <a href="https://arxiv.org/abs/2410.03577">Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
+  
+  # 
 <!-- **Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models** -->
 
 <div style='display:flex; gap: 0.25rem; '>
