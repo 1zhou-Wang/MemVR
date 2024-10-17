@@ -5,18 +5,18 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2410.03577">Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
-  
-<div style='display:flex; gap: 0.25rem; '>
-  <a href="https://huggingface.co/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
-  <a href="LICENCE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
-  <a href="https://arxiv.org/abs/2410.03577"><img src="assets/Paper-Arxiv-orange.svg" ></a>
-  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F1zhou-Wang%2FMemVR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)
-  <a title="Hits" target="_blank" href="https://github.com/1zhou-Wang/MemVR"><img src="https://hits.b3log.org/88250/Hits.svg"></a>
-</div>
 
-<div align="center">
-<img src="assets/memvrlogo.png" width="25%">
-</div>
+<h5 align=center>
+
+<!-- [![Demo](https://img.shields.io/badge/⚡-Hugging%20Face%20Demo-yellow.svg)](https://huggingface.co/spaces/Chat-UniVi/Chat-UniVi) -->
+[![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/)
+[![arXiv](https://img.shields.io/badge/Arxiv-2410.11842-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
+[![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/SkyworkAI/MoH/blob/main/LICENSE)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F1zhou-Wang%2FMemVR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)
+</h5>
+
+
+
 
 ## 🔥 Update
 * [2024-10-7]: ⭐️ Paper of MemVR uploaded. Check out [this link](https://arxiv.org/abs/2410.03577) for details.
