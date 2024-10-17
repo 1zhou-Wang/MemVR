@@ -51,3 +51,14 @@ Comprehensive experimental evaluations demonstrate that MEMVR significantly miti
 ![Case2](assets/longcase.png)
 *Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
+
+## ✏️ Citation
+If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
+```
+@article{zou2024memvr,
+  title={Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models}, 
+  author={Xin Zou and Yizhou Wang and Yibo Yan and Sirui Huang and Kening Zheng and Junkai Chen and Chang Tang and Xuming Hu},
+  journal={arxiv preprint arxiv:2410.03577},
+  year={2024}
+}
+```
