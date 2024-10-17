@@ -15,17 +15,19 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F1zhou-Wang%2FMemVR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)      
 </h5>
 
-
-
-## 🔥 Update
-* [2024-10-7]: ⭐️ Paper of MemVR uploaded. Check out [this link](https://arxiv.org/abs/2410.03577) for details.
-* [2024-11-14]: 🚀🚀 Codes will be released after one month.
+## 📣 News
+* **[2024/10/7]** ⭐️ Paper of MemVR uploaded. Please check out [this link](https://arxiv.org/abs/2410.03577) for details.
+* **[2024/11/14]**  🚀🚀 Source codes will be released on 2024-11-14. Welcome to **watch** 👀 this repository for the latest updates.
 
 ## 🎯 Overview
-![MemVR](assets/bigfig.png)
+We propose Memory-Space Visual Retracing (MemVR), a novel hallucination mitigation paradigm without needing external knowledge retrieval or additional fine-tuning. MemVR has two significant advantages:
+* First, MemVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks, emphasizing its potential for widespread applicability.
+* Second, MemVR is a plug-and-play solution without incurring added time overhead.
 
+![MemVR](assets/bigfig.png)
+![MemVR](assets/bigfig.png)
 <div align="center">
-<strong>It’s a game-changer for effectiveness and efficiency.</strong>strong>
+<strong>It’s a game-changer for effectiveness and efficiency.</strong>
 </div>
 
 In contrast to previous methods, which primarily focus on eliminating biases of language priors, MemVR seeks to replenish visual clues towards more evidential responses, which signifies the other side of the coin.
