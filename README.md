@@ -17,7 +17,7 @@
 
 ## 📣 News
 * **[2024/10/7]** ⭐️ Paper of MemVR uploaded. Please check out [this link](https://arxiv.org/abs/2410.03577) for details.
-* **[2024/11/14]**  🚀🚀 Source codes will be released on 2024-11-14. Welcome to **watch** 👀 this repository for the latest updates.
+* **[2024/11/14]**  🚀 Codes will be released on 2024-11-14. Welcome to **watch** 👀 this repository for the latest updates.
 
 ## 🎯 Overview
 We propose Memory-Space Visual Retracing (MemVR), a novel hallucination mitigation paradigm without needing external knowledge retrieval or additional fine-tuning. MemVR has two significant advantages:
