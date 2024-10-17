@@ -3,11 +3,10 @@
 </div>
 
 <h2 align="center"> <a href="https://arxiv.org/abs/2410.03577">Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
+</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
-
 <h5 align=center>
-
 <!-- [![Demo](https://img.shields.io/badge/⚡-Hugging%20Face%20Demo-yellow.svg)](https://huggingface.co/spaces/Chat-UniVi/Chat-UniVi) -->
 [![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/)
 [![arXiv](https://img.shields.io/badge/Arxiv-2410.11842-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
