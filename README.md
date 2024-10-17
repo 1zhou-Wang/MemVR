@@ -25,7 +25,7 @@ We propose Memory-Space Visual Retracing (MemVR), a novel hallucination mitigati
 * Second, MemVR is a plug-and-play solution without incurring added time overhead.
 
 ![MemVR](assets/bigfig.png)
-![MemVR](assets/bigfig.png)
+![MemVR](assets/compared.png)
 <div align="center">
 <strong>It’s a game-changer for effectiveness and efficiency.</strong>
 </div>
