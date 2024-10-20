@@ -62,3 +62,7 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
   year={2024}
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=1zhou-Wang/MemVR&type=Date)](https://star-history.com/#1zhou-Wang/MemVR&Date)
