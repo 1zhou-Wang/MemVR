@@ -53,6 +53,27 @@ Comprehensive experimental evaluations demonstrate that MemVR significantly miti
 *Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
 ## Getting Started:
+Firts, clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
+```
+conda create -n memvr python==3.10
+conda activate memvr
+pip install --upgrade pip
+pip install -e .
+```
+After setting up clone the repository from [MemVR](https://github.com/1zhou-Wang/MemVR) and move all contents to the main directory of LLaVA.
+Then download the checkpoint of LLaVA v1.5 [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
+You may check if your environment works fine by running
+```
+python inference.py
+```
+Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to directory /path_to_LLaVA/llava/eval, or [here](https://github.com/haotian-liu/LLaVA/tree/main/llava/eval).
+Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials.
+Test with these benchmarks by running
+```
+bash scripts/llava/mme.sh # or any other benchmarks
+```
+Please note that you may need to fill in your own OpenAI API-KEY for GPT-based evaluations.
+
 
 ## ✏️ Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
