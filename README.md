@@ -66,13 +66,26 @@ You may check if your environment works fine by running
 ```
 python inference.py
 ```
+which may generate a description of a fluffy toy.
 Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to directory /path_to_LLaVA/llava/eval, or [here](https://github.com/haotian-liu/LLaVA/tree/main/llava/eval).
 Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials.
 Test with these benchmarks by running
 ```
 bash scripts/llava/mme.sh # or any other benchmarks
 ```
-Please note that you may need to fill in your own OpenAI API-KEY for GPT-based evaluations.
+Please note that you may need to fill in your own OpenAI API-KEY for GPT-based evaluations like llavabench or MM-Vet.
+
+Here are some tips of the parameters in the scripts:
+```
+    --retracing-ratio 0.12 \
+    --entropy-threshold 0.75 \
+    --starting-layer 5 \
+    --ending-layer 16 \
+```
+Where 
+[retracing-ratio] refers to the percentage of visual_token to be retraced in certain layer. It has straightforward effect on the model's performance.
+[entropy-threshold] defines the minimum layer-wide entropy that triggers visual information retracing.
+[starting-layer] and [ending-layer] set the range of layers where visual information retracing is allowed.
 
 
 ## ✏️ Citation
