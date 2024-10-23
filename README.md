@@ -75,7 +75,7 @@ or [here](https://github.com/haotian-liu/LLaVA/tree/main/llava/eval).
 Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials.
 Test with these benchmarks by running
 ```
-bash scripts/llava/mme.sh # or any other benchmarks
+bash scripts/llava/mme.sh 
 ```
 Please note that you may need to fill in your own OpenAI API-KEY for GPT-based evaluations like llavabench or MM-Vet.
 
