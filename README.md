@@ -37,22 +37,6 @@ In contrast to previous methods, which primarily focus on eliminating biases of 
 Comprehensive experimental evaluations demonstrate that MemVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks without incurring added time overhead.
 
 ## 🕹️ Usage
-
-## 🏅 Experiments
-![MemVR](assets/mmbench.png)
-*Figure 5. Results on MMBench. MemVR enhances comprehensive performance on diverse tasks.*
-
-## 📌 Examples
-![Case1](assets/caseA.png)
-*Figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
-
-![MemVR](assets/cases2.png)
-*Figure 13: A case study comparing the levels of hallucination among various baselines.*
-
-![Case2](assets/longcase.png)
-*Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
-
-## Getting Started:
 Firts, clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
 ```
 conda create -n memvr python==3.10
@@ -91,6 +75,20 @@ Where
 * [entropy-threshold] defines the minimum layer-wide entropy that triggers visual information retracing.
 * [starting-layer] and [ending-layer] set the range of layers where visual information retracing is allowed.
 
+
+## 🏅 Experiments
+![MemVR](assets/mmbench.png)
+*Figure 5. Results on MMBench. MemVR enhances comprehensive performance on diverse tasks.*
+
+## 📌 Examples
+![Case1](assets/caseA.png)
+*Figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
+
+![MemVR](assets/cases2.png)
+*Figure 13: A case study comparing the levels of hallucination among various baselines.*
+
+![Case2](assets/longcase.png)
+*Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
 ## ✏️ Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
