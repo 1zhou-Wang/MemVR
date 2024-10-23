@@ -114,4 +114,3 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=1zhou-Wang/MemVR&type=Date)](https://star-history.com/#1zhou-Wang/MemVR&Date)
->>>>>>> 4470442d88bef5e1cb3f7adcae6392bb94896e4a
