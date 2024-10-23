@@ -110,7 +110,7 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
 - [GLM-4V](https://github.com/THUDM/GLM-4): ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools
 - [Qwen-VL](https://github.com/QwenLM/Qwen-VL): A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond
 - [LLaVA 1.5](https://github.com/haotian-liu/LLaVA): Improved Baselines with Visual Instruction Tuning
-- 
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=1zhou-Wang/MemVR&type=Date)](https://star-history.com/#1zhou-Wang/MemVR&Date)
