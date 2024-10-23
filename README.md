@@ -37,7 +37,7 @@ In contrast to previous methods, which primarily focus on eliminating biases of 
 Comprehensive experimental evaluations demonstrate that MemVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks without incurring added time overhead.
 
 ## 🕹️ Usage
-Firts, clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
+First, clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
 ```
 conda create -n memvr python==3.10
 conda activate memvr
