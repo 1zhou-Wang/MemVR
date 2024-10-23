@@ -17,7 +17,7 @@
 
 ## 📣 News
 * **[2024/10/7]** ⭐️ Paper of MemVR uploaded. Please check out [this link](https://arxiv.org/abs/2410.03577) for details.
-* **[2024/10/23]**  🚀 Codes will be released on 2024-10-23. Welcome to **watch** 👀 this repository for the latest updates.
+* **[2024/10/22]**  🚀 Codes will be released on 2024-10-23. Welcome to **watch** 👀 this repository for the latest updates.
 * **[2024/10/23]**  🚀 Source code released!
 
 ## 🎯 Overview
@@ -52,6 +52,7 @@ Comprehensive experimental evaluations demonstrate that MemVR significantly miti
 ![Case2](assets/longcase.png)
 *Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
+## Getting Started:
 
 ## ✏️ Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
