@@ -37,29 +37,54 @@ In contrast to previous methods, which primarily focus on eliminating biases of 
 Comprehensive experimental evaluations demonstrate that MemVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks without incurring added time overhead.
 
 ## 🕹️ Usage
-First, clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
+
+### Installation
+
+1. We recommend you to use [LLaVA](https://github.com/haotian-liu/LLaVA) as the working environment. Please clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
 ```
+git clone https://github.com/haotian-liu/LLaVA
+cd LLaVA
 conda create -n memvr python==3.10
 conda activate memvr
 pip install --upgrade pip
 pip install -e .
 ```
-After setting up clone the repository from [MemVR](https://github.com/1zhou-Wang/MemVR) and move all contents to the main directory of LLaVA.
-Then download the checkpoint of LLaVA v1.5 [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
+2. After setting up, clone the repository from [MemVR](https://github.com/1zhou-Wang/MemVR) and move all contents to the main directory of LLaVA (except README.md).
+```bash
+LLaVA/
+├── llava/
+│ ├── eval/ # merge here in next step
+│ ├── .../
+├── eval_scripts/
+│ ├── llava/
+│ ├── qwen/
+│ ├── glm/
+├── memvr.py/
+├── inference.py/
+├── red_bird.jpg/
+└── ...
+```
+Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to directory 
+```
+/LLaVA/llava/eval/
+```
+
+### Downloading Checkpoints
+Under the main directory of LLaVA:
+1. Download the checkpoint of LLaVA v1.5 [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
+2. Download the checkpoint of Qwen-VL-Chat [here](https://huggingface.co/Qwen/Qwen-VL-Chat). Replace the downloaded 'modeling_qwen.py' by [modeling_qwen.py]()
+3. Download the checkpoint of glm-4v-9b [here](https://huggingface.co/THUDM/glm-4v-9b).
 You may check if your environment works fine by running
 ```
 python inference.py
 ```
 which may generate a description of a fluffy toy.
-Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to directory 
-```
-/path_to_LLaVA/llava/eval
-```
+
 or [here](https://github.com/haotian-liu/LLaVA/tree/main/llava/eval).
 Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials.
 Test with these benchmarks by running
 ```
-bash scripts/llava/mme.sh 
+bash eval_scripts/llava/mme.sh 
 ```
 Please note that you may need to fill in your own OpenAI API-KEY for GPT-based evaluations like llavabench or MM-Vet.
 
