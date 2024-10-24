@@ -82,7 +82,7 @@ python inference.py
 which may generate a description of a fluffy toy.
 
 ### Evaluation
-Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials.
+Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials. Additionally, we recommen you to use GPUs with no less than 40GB of VRAM.
 Test with these benchmarks by running
 ```
 bash eval_scripts/llava/mme.sh 
