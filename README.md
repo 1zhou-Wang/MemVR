@@ -72,15 +72,16 @@ Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) t
 ### Downloading Checkpoints
 Under the main directory of LLaVA:
 1. Download the checkpoint of LLaVA v1.5 [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
-2. Download the checkpoint of Qwen-VL-Chat [here](https://huggingface.co/Qwen/Qwen-VL-Chat). Replace the downloaded 'modeling_qwen.py' by [modeling_qwen.py]()
-3. Download the checkpoint of glm-4v-9b [here](https://huggingface.co/THUDM/glm-4v-9b).
+2. Download the checkpoint of Qwen-VL-Chat [here](https://huggingface.co/Qwen/Qwen-VL-Chat). Replace the downloaded 'modeling_qwen.py' by [modeling_qwen.py](https://github.com/1zhou-Wang/MemVR/blob/main/modeling/modeling_qwen.py) to enable MemVR on Qwen-VL-Chat model.
+3. Download the checkpoint of glm-4v-9b [here](https://huggingface.co/THUDM/glm-4v-9b). Replace the downloaded 'modeling_chatglm.py' by [modeling_chatglm.py](https://github.com/1zhou-Wang/MemVR/blob/main/modeling/modeling_chatglm.py) to enable MemVR on glm-4v-9b model.
+
 You may check if your environment works fine by running
 ```
 python inference.py
 ```
 which may generate a description of a fluffy toy.
 
-or [here](https://github.com/haotian-liu/LLaVA/tree/main/llava/eval).
+### Evaluation
 Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials.
 Test with these benchmarks by running
 ```
