@@ -26,13 +26,13 @@ tokenizer, model, image_processor, max_length = load_pretrained_model(
 
 model.eval()
 model.tie_weights()
-image_name = 'red_bird.jpg'
+image_name = 'images/case_1.png'
 image = Image.open(image_name).convert("RGB")
 image_tensor = process_images([image], image_processor, model.config)
 image_tensor = [_image.to(dtype=torch.float16, device=device) for _image in image_tensor]
 
 conv_template = "vicuna_v1" # Make sure you use correct chat template for different models
-question = DEFAULT_IMAGE_TOKEN + "\nDescribe this image in detail."
+question = DEFAULT_IMAGE_TOKEN + "\nWhat is the name of this famous sight in the photo?"
 conv_mode = "vicuna_v1"
 conv = conv_templates[conv_mode].copy()
 inp =  question
@@ -43,6 +43,7 @@ question = conv.get_prompt()
 input_ids = tokenizer_image_token(question, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt").unsqueeze(0).to(device)
 image_sizes = [image.size]
 
+# Try disable / enable it to see the difference
 apply_memvr_llama(
     self=model,
     starting_layer = 5,    
