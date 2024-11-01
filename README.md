@@ -60,7 +60,8 @@ LLaVA/
 │ ├── glm/
 ├── memvr.py/
 ├── inference.py/
-├── red_bird.jpg/
+├── images/
+│ ├── ...
 └── ...
 ```
 Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to directory 
