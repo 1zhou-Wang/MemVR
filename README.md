@@ -17,7 +17,7 @@
 
 ## 📣 News
 * **[2024/10/7]** ⭐️ Paper of MemVR uploaded. Please check out [this link](https://arxiv.org/abs/2410.03577) for details.
-* **[2024/10/7]**  🚀 Codes will be released on 2024-10-23. Welcome to **watch** 👀 this repository for the latest updates.
+* **[2024/10/7]**  🚀 Codes will be released. Welcome to **watch** 👀 this repository for the latest updates.
 * **[2024/10/23]**  🚀 Source code released! We're now working on extending MemVR to more MLLMs.
 
 ## 🎯 Overview
