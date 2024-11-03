@@ -109,9 +109,6 @@ Where
 ![Case1](assets/caseA.png)
 *Figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
 
-![MemVR](assets/cases2.png)
-*Figure 13: A case study comparing the levels of hallucination among various baselines.*
-
 ![Case2](assets/longcase.png)
 *Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
