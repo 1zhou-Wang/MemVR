@@ -39,7 +39,7 @@ Comprehensive experimental evaluations demonstrate that MemVR significantly miti
 
 ### Installation
 
-1. We recommend you to use [LLaVA](https://github.com/haotian-liu/LLaVA) as the working environment. Please clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the envirnment bu running
+1. We recommend you use [LLaVA](https://github.com/haotian-liu/LLaVA) as the working environment. Please clone the repository from [LLaVA](https://github.com/haotian-liu/LLaVA) and set up the environment by running
 ```
 git clone https://github.com/haotian-liu/LLaVA
 cd LLaVA
@@ -52,7 +52,7 @@ pip install -e .
 ```bash
 LLaVA/
 ├── llava/
-│ ├── eval/ # merge here in next step
+│ ├── eval/ # merge here in the next step
 │ ├── .../
 ├── eval_scripts/
 │ ├── llava/
@@ -64,7 +64,7 @@ LLaVA/
 │ ├── ...
 └── ...
 ```
-Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to directory 
+Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) to the directory 
 ```
 /LLaVA/llava/eval/
 ```
@@ -73,7 +73,7 @@ Then merge the file [eval](https://github.com/1zhou-Wang/MemVR/tree/main/eval) t
 Under the main directory of LLaVA:
 1. Download the checkpoint of LLaVA v1.5 [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
 2. Download the checkpoint of Qwen-VL-Chat [here](https://huggingface.co/Qwen/Qwen-VL-Chat). Replace the downloaded 'modeling_qwen.py' by [modeling_qwen.py](https://github.com/1zhou-Wang/MemVR/blob/main/modeling/modeling_qwen.py) to enable MemVR on Qwen-VL-Chat model.
-3. Download the checkpoint of glm-4v-9b [here](https://huggingface.co/THUDM/glm-4v-9b). Replace the downloaded 'modeling_chatglm.py' by [modeling_chatglm.py](https://github.com/1zhou-Wang/MemVR/blob/main/modeling/modeling_chatglm.py) to enable MemVR on glm-4v-9b model.
+3. Download the checkpoint of glm-4v-9b [here](https://huggingface.co/THUDM/glm-4v-9b). Replace the downloaded 'modeling_chatglm.py' by [modeling_chatglm.py](https://github.com/1zhou-Wang/MemVR/blob/main/modeling/modeling_chatglm.py) to enable MemVR on GLM-4V-9b model.
 
 You may check if your environment works fine by running
 ```
@@ -81,7 +81,7 @@ python inference.py
 ```
 
 ### Evaluation
-Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials. Additionally, we recommen you to use GPUs with no less than 40GB of VRAM.
+Follow [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) in [LLaVA](https://github.com/haotian-liu/LLaVA) to prepare for the benchmark materials. Additionally, we recommend you use GPUs with no less than 40GB of VRAM.
 Test with these benchmarks by running
 ```
 bash eval_scripts/llava/mme.sh 
@@ -96,7 +96,7 @@ Here are some tips of the parameters in the scripts:
     --ending-layer 16 \
 ```
 Where 
-* [retracing-ratio] refers to the percentage of visual_token to be retraced in certain layer. It has straightforward effect on the model's performance.
+* [retracing-ratio] refers to the percentage of visual_token to be retraced in a certain layer. It has a straightforward effect on the model's performance.
 * [entropy-threshold] defines the minimum layer-wide entropy that triggers visual information retracing.
 * [starting-layer] and [ending-layer] set the range of layers where visual information retracing is allowed.
 
