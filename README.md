@@ -104,12 +104,6 @@ Where
 ![MemVR](assets/mmbench.png)
 *Figure 5. Results on MMBench. MemVR enhances comprehensive performance on diverse tasks.*
 
-## 📌 Examples
-![Case1](assets/caseA.png)
-*Figure 9. Visualization of uncertainty across layers without and with MemVR. MemVR effectively reduces uncertainty after the 8th layer, contributing to hallucination mitigations.*
-
-![Case2](assets/longcase.png)
-*Figure 10. A case study in long text generation. MemVR effectively mitigates hallucinations.*
 
 ## ✏️ Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
