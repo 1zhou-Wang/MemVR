@@ -1,5 +1,5 @@
 <div align=center>
-<img src="assets/memvrlogo.png" width="240px">
+<img src="assets/memvrlogo.png" width="200px">
 </div>
 <h2 align="center"> <a href="https://arxiv.org/abs/2410.03577">Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models
 </a></h2>
