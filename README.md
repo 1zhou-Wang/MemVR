@@ -100,10 +100,6 @@ Where
 * [starting-layer] and [ending-layer] set the range of layers where visual information retracing is allowed.
 
 
-## 🏅 Experiments
-![MemVR](assets/mmbench.png)
-*Figure 5. Results on MMBench. MemVR enhances comprehensive performance on diverse tasks.*
-
 
 ## ✏️ Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
