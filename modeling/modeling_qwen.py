@@ -328,7 +328,9 @@ class QWenMLP(nn.Module):
         )
         ff_dim_in = config.intermediate_size // 2
         self.c_proj = nn.Linear(ff_dim_in, config.hidden_size, bias=not config.no_bias)
-        self.vision_retracing_sign = False
+
+        # MemVR
+        self.vision_retracing_sign = False 
         self.vision_retracing_event = False
         self.vision_retracing_method = "default"
         self.vision_retracing_layer = 0
@@ -749,6 +751,8 @@ class QWenModel(QWenPreTrainedModel):
                     output_attentions=output_attentions,
                 )
             # get logits for each layer's output
+
+            # Calculate the layer entropy
             hidden_states = outputs[0]
             logits = self.lm_head(hidden_states)
             logits = logits[:, -1, :]
@@ -759,13 +763,14 @@ class QWenModel(QWenPreTrainedModel):
             entropy = torch.sum((-probabilities[:10] * torch.log(probabilities[:10]))/np.log(10))
             entropy = entropy.item()
 
-            formatted_top_k_scores = [f"{score:.3f}" for score in top_k_scores.flatten().tolist()]
-            formatted_top_k_indices = [f"{index:.3f}" for index in top_k_indices.flatten().tolist()]
-            formatted_probabilities = [f"{prob:.3f}" for prob in probabilities.flatten().tolist()]
+            # formatted_top_k_scores = [f"{score:.3f}" for score in top_k_scores.flatten().tolist()]
+            # formatted_top_k_indices = [f"{index:.3f}" for index in top_k_indices.flatten().tolist()]
+            # formatted_probabilities = [f"{prob:.3f}" for prob in probabilities.flatten().tolist()]
             formatted_entropy = f"{entropy:.3f}"
 
 
             # round n+1
+            # vision_retracing_sign is true, meaning that the visual token has been added. Now, clear the adaptation channel, reset the adpt_sign and vision_retracing_sign.
             if self.h[layer].mlp.vision_retracing_sign:
 
                 if vision_retracing_method == "adapt":
@@ -779,6 +784,8 @@ class QWenModel(QWenPreTrainedModel):
 
                 
             # round n
+            # calculate the entropy of the top 10 logits. if the entropy is greater than the threshold, and the visual retracing event is not happening, and the layer is within the range of starting and ending layer, then add the visual token to the next layer with adaptation channel
+            # initialize the adaptation channel with the visual token
             if entropy > entropy_threshold and self.h[0].mlp.vision_retracing_event == False and layer > starting_layer and layer < ending_layer:
                 
                 self.h[layer+1].mlp.vision_retracing_sign = True

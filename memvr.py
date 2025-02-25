@@ -162,8 +162,8 @@ def forward(
     entropy_threshold = self.layers[0].mlp.entropy_threshold
     starting_layer = self.layers[0].mlp.starting_layer
     ending_layer = self.layers[0].mlp.ending_layer
-    visual_retracing_event = False
-    vision_retracing_sign  = False
+    visual_retracing_event = False # to prevent multiple retracing event
+    vision_retracing_sign  = False # to decide whether to add visual token in the next layer
 
 
     for decoder_layer in self.layers:
@@ -209,6 +209,7 @@ def forward(
         logits = logits.float()
         logits = logits_processor(input_ids, logits)
 
+        # Calculate the layer entropy
         top_k_scores, top_k_indices = torch.topk(logits, 10)
         probabilities = F.softmax(top_k_scores, dim=-1)
         entropy = torch.sum((-probabilities[:10] * torch.log(probabilities[:10]))/np.log(10))
@@ -221,6 +222,7 @@ def forward(
 
 
         # round n+1
+        # vision_retracing_sign is true, meaning that the visual token has been added. Now, clear the adaptation channel, reset the adpt_sign and vision_retracing_sign.
         if vision_retracing_sign == True:
 
             self.layers[layer].mlp.adpt_sign = 0
@@ -233,12 +235,14 @@ def forward(
 
             
         # round n
+        # calculate the entropy of the top 10 logits. if the entropy is greater than the threshold, and the visual retracing event is not happening, and the layer is within the range of starting and ending layer, then add the visual token to the next layer with adaptation channel
+        # initialize the adaptation channel with the visual token
         if entropy > entropy_threshold and visual_retracing_event == False and layer > starting_layer and layer < ending_layer:
             
             vision_retracing_sign = True
             visual_retracing_event = True
 
-            self.layers[layer+1].mlp.adpt_sign = 1
+            self.layers[layer+1].mlp.adpt_sign = 1 # triggers the MemVR adaptation channel in MLP of the next layer
             self.layers[layer+1].mlp.adpt_w1 = torch.nn.Parameter(torch.zeros_like(visual_token))
             self.layers[layer+1].mlp.adpt_w2 = torch.nn.Parameter(torch.zeros_like(visual_token.T))
             self.layers[layer+1].mlp.adpt_w1 += (torch.mean(torch.abs(self.layers[layer+1].mlp.up_proj.weight)) / (torch.mean(torch.abs(visual_token))))  * visual_token
@@ -252,15 +256,7 @@ def forward(
         entropy_list.append(formatted_entropy)
         layer += 1
 
-    hidden_states = self.norm(hidden_states)
-    tem_logits = self.lm_head(hidden_states)
-    tem_logits = tem_logits[:, -1, :]
-    tem_logits = logits.float()
-    tem_logits = logits_processor(input_ids, logits)
-    tem_top_k_scores, tem_top_k_indices = torch.topk(logits, 10)
-    # print("\n", tem_top_k_indices[0][:1])
-    # print("\n", entropy_list)
-    # add hidden states from the last decoder layer
+
     if output_hidden_states:
         all_hidden_states += (hidden_states,)
 
@@ -458,6 +454,7 @@ def prepare_inputs_labels_for_multimodal(
         position_ids = None
 
     # MemVR
+    # pass the image features to the first layer of the model
     self.model.layers[0].mlp.visual_token = cur_image_features
     
     return None, position_ids, attention_mask, past_key_values, new_input_embeds, new_labels

@@ -833,14 +833,15 @@ class GLMTransformer(torch.nn.Module):
             logits = logits.float()
             logits = logits_processor(input_ids, logits)
 
-
+            # calculate the layer entropy
             top_k_scores, top_k_indices = torch.topk(logits, 10)
             probabilities = F.softmax(top_k_scores, dim=-1)
             entropy = torch.sum((-probabilities[:10] * torch.log(probabilities[:10]))/np.log(10))
             entropy = entropy.item()
             formatted_entropy = f"{entropy:.3f}"
 
-
+            # round n+1
+            # vision_retracing_sign is true, meaning that the visual token has been added. Now, clear the adaptation channel, reset the adpt_sign and vision_retracing_sign.
             if self.layers[index].mlp.vision_retracing_sign:
 
                 if vision_retracing_method == "adapt":
@@ -851,6 +852,9 @@ class GLMTransformer(torch.nn.Module):
 
                 self.layers[index].mlp.vision_retracing_sign = False
 
+            # round n
+            # calculate the entropy of the top 10 logits. if the entropy is greater than the threshold, and the visual retracing event is not happening, and the layer is within the range of starting and ending layer, then add the visual token to the next layer with adaptation channel
+            # initialize the adaptation channel with the visual token
             if entropy > entropy_threshold and self.layers[0].mlp.vision_retracing_event == False and index > starting_layer and index < ending_layer:
 
                 self.layers[index+1].mlp.vision_retracing_sign = True
@@ -866,12 +870,6 @@ class GLMTransformer(torch.nn.Module):
 
                 else :
                     print(" using default model \n")
-
-
-
-
-
-
 
 
             if use_cache:
