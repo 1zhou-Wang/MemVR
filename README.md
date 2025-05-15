@@ -30,6 +30,8 @@ We propose Memory-Space Visual Retracing (MemVR), a novel hallucination mitigati
 
 ![MemVR](assets/longcase.png)
 
+![MemVR](assets/caseA.png)
+
 Comprehensive experimental evaluations demonstrate that MemVR significantly mitigates hallucination issues across various MLLMs and excels in general benchmarks without incurring added time overhead. More results in the paper.
 
 ## 🕹️ Usage
