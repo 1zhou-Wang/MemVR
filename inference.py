@@ -49,7 +49,7 @@ apply_memvr_llama(
     starting_layer = 5,    
     ending_layer = 16,
     entropy_threshold = 0.75,
-    retracing_ratio = 0.12
+    retracing_ratio = 0.1
 )
 
 with torch.inference_mode():
