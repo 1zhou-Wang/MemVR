@@ -48,6 +48,10 @@ conda activate memvr
 pip install --upgrade pip
 pip install -e .
 ```
+Then after setting up environment for LLaVA, update the _transformers_ lib to 4.40.0:
+```
+pip install transformers==4.40.0
+```
 2. After setting up, clone the repository from [MemVR](https://github.com/1zhou-Wang/MemVR) and move all contents to the main directory of LLaVA (except README.md).
 ```bash
 LLaVA/
