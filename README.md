@@ -55,7 +55,7 @@ pip install transformers==4.40.0
 Please note that due to the change of _transformers_ lib, you need to modify the _**forward**_ function defined at [llava_llama.py](https://github.com/haotian-liu/LLaVA/blob/main/llava/model/language_model/llava_llama.py), line 70. Add _cache_position=None_ to it. 
 We also provide a modified version of file [here](https://github.com/1zhou-Wang/MemVR/blob/main/llava_llama.py), that you can replace the original _llava_llama.py_ with this one. _llava_llama.py_ is at 
 ```
-_LLaVA/llava/model/language_model/llava_llama.py_
+LLaVA/llava/model/language_model/llava_llama.py
 ```
 2. After setting up, clone the repository from [MemVR](https://github.com/1zhou-Wang/MemVR) and move all contents to the main directory of LLaVA (except README.md).
 ```bash
