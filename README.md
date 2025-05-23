@@ -9,15 +9,14 @@
 
 <h5 align=center>
 
-[![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/papers/2410.03577)
-[![arXiv](https://img.shields.io/badge/%40-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
-[![License](https://img.shields.io/badge/🔓-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/Chat-UniVi/blob/main/LICENSE)  
 [![Post](https://img.shields.io/badge/📚-PaperWeekly-informational)](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/147998192) 
+[![arXiv](https://img.shields.io/badge/Arixv-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
+[![License](https://img.shields.io/badge/License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/Chat-UniVi/blob/main/LICENSE)  
 </h5>
 
 ## 📣 News
 * **[2024/10/23]**  🚀 Source code released! We're now working on extending MemVR to more MLLMs.
-* **[2025/05/01]**  🎉🎉🎉 MemVR has been accepted by ICML 2025. See you in Vancouver, Canada!
+* **[2025/05/01]**  🎉🎉🎉 MemVR has been accepted by ICML 2025. See you in Vancouver, Canada! 
 
 ## 🎯 Overview
 We propose Memory-Space Visual Retracing (MemVR), a novel hallucination mitigation paradigm without needing external knowledge retrieval or additional fine-tuning. MemVR has two significant advantages:
