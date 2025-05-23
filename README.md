@@ -10,7 +10,7 @@
 <h5 align=center>
 
 [![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/papers/2410.03577)
-[![arXiv](https://img.shields.io/badge/-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
+[![arXiv](https://img.shields.io/badge/%40-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
 [![License](https://img.shields.io/badge/🔓-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/Chat-UniVi/blob/main/LICENSE)  
 [![Post](https://img.shields.io/badge/📚-PaperWeekly-informational)](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/147998192) 
 </h5>
