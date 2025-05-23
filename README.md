@@ -12,7 +12,7 @@
 [![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/papers/2410.03577)
 [![arXiv](https://img.shields.io/badge/Arxiv-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/Chat-UniVi/blob/main/LICENSE)  
-[![Post](https://img.shields.io/badge/PaperWeekly-Post-informational)](https://mp.weixin.qq.com/s/hQbNVe0u_kMocaxdLM2f4g) 
+[![Post](https://img.shields.io/badge/📚-PaperWeekly-informational)](https://mp.weixin.qq.com/s/hQbNVe0u_kMocaxdLM2f4g) 
 </h5>
 
 ## 📣 News
