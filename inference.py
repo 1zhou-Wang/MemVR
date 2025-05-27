@@ -3,6 +3,7 @@ from llava.mm_utils import get_model_name_from_path, process_images, tokenizer_i
 from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
 from llava.conversation import conv_templates, SeparatorStyle
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+import transformers
 from llava.model.llava_arch import LlavaMetaForCausalLM
 
 from PIL import Image
@@ -11,11 +12,14 @@ import copy
 import torch
 import time
 
-from memvr import apply_memvr_llama
+from memvr import apply_memvr_llama, LlamaMLP
 
 model_path = "llava-v1.5-7b"
 
 device = "cuda:0"
+
+# MemVR
+transformers.models.llama.modeling_llama.LlamaMLP = LlamaMLP
 
 tokenizer, model, image_processor, max_length = load_pretrained_model(
     model_path = model_path,
@@ -49,7 +53,7 @@ apply_memvr_llama(
     starting_layer = 5,    
     ending_layer = 16,
     entropy_threshold = 0.75,
-    retracing_ratio = 0.12
+    retracing_ratio = 0.1
 )
 
 with torch.inference_mode():
@@ -60,7 +64,7 @@ with torch.inference_mode():
         image_sizes=image_sizes,
         do_sample=False,
         temperature=1,
-        max_new_tokens=1024,
+        max_new_tokens=64,
     )
     end_time = time.time()
 text_outputs = tokenizer.batch_decode(cont, skip_special_tokens=True)[0].strip()

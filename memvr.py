@@ -228,7 +228,7 @@ def forward(
             self.layers[layer].mlp.adpt_sign = 0
             self.layers[layer].mlp.adpt_w1 = torch.nn.Parameter(torch.zeros_like(visual_token))
             self.layers[layer].mlp.adpt_w2 = torch.nn.Parameter(torch.zeros_like(visual_token.T))
-            print("\n added visual token with adatption channel at layer ", layer)
+            # print("\n added visual token with adatption channel at layer ", layer)
                 
             vision_retracing_sign = False
 
@@ -256,7 +256,7 @@ def forward(
         entropy_list.append(formatted_entropy)
         layer += 1
 
-
+    hidden_states = self.norm(hidden_states)
     if output_hidden_states:
         all_hidden_states += (hidden_states,)
 
