@@ -68,6 +68,8 @@ class LlavaLlamaForCausalLM(LlamaForCausalLM, LlavaMetaForCausalLM):
         images: Optional[torch.FloatTensor] = None,
         image_sizes: Optional[List[List[int]]] = None,
         return_dict: Optional[bool] = None,
+
+        # MemVR modification, due to changed version of transformers lib
         cache_position=None
         
     ) -> Union[Tuple, CausalLMOutputWithPast]:
