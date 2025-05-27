@@ -9,14 +9,14 @@
 
 <h5 align=center>
 
-[![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/papers/2410.03577)
-[![arXiv](https://img.shields.io/badge/Arxiv-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
-[![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/Chat-UniVi/blob/main/LICENSE)    
+[![Post](https://img.shields.io/badge/📚-PaperWeekly-informational)](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/147998192) 
+[![arXiv](https://img.shields.io/badge/Arixv-2410.03577-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.03577)
+[![License](https://img.shields.io/badge/License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/Chat-UniVi/blob/main/LICENSE)  
 </h5>
 
 ## 📣 News
 * **[2024/10/23]**  🚀 Source code released! We're now working on extending MemVR to more MLLMs.
-* **[2025/05/01]**  🎉🎉🎉 MemVR has been accepted by ICML 2025. See you in Vancouver, Canada!
+* **[2025/05/01]**  🎉🎉🎉 MemVR has been accepted by ICML 2025. See you in Vancouver, Canada! 
 
 ## 🎯 Overview
 We propose Memory-Space Visual Retracing (MemVR), a novel hallucination mitigation paradigm without needing external knowledge retrieval or additional fine-tuning. MemVR has two significant advantages:
@@ -47,6 +47,15 @@ conda create -n memvr python==3.10
 conda activate memvr
 pip install --upgrade pip
 pip install -e .
+```
+Then after setting up environment for LLaVA, update the _transformers_ lib to 4.40.0:
+```
+pip install transformers==4.40.0
+```
+Please note that due to the change of _transformers_ lib, you need to modify the _**forward()**_ function defined at [llava_llama.py](https://github.com/haotian-liu/LLaVA/blob/main/llava/model/language_model/llava_llama.py), line 70. Add _cache_position=None_ to it. 
+We also provide a modified version of file [here](https://github.com/1zhou-Wang/MemVR/blob/main/llava_llama.py), that you can replace the original _llava_llama.py_ with this one. _llava_llama.py_ is at 
+```
+LLaVA/llava/model/language_model/llava_llama.py
 ```
 2. After setting up, clone the repository from [MemVR](https://github.com/1zhou-Wang/MemVR) and move all contents to the main directory of LLaVA (except README.md).
 ```bash

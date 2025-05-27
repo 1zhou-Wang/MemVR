@@ -29,10 +29,12 @@ from llava.mm_utils import tokenizer_image_token, process_images, get_model_name
 from torch.utils.data import Dataset, DataLoader
 from llava.model.llava_arch import LlavaMetaForCausalLM
 
+import transformers
+
 import math
 
 # MemVR
-from memvr import apply_memvr_llama
+from memvr import apply_memvr_llama, LlamaMLP
 
 # import debugpy
 # debugpy.listen(10010)
@@ -100,6 +102,9 @@ args = parser.parse_args()
 #             Model Initialization
 # ========================================
 print('Initializing Model')
+
+# MemVR init
+transformers.models.llama.modeling_llama.LlamaMLP = LlamaMLP
 
 device= args.cuda_device
 model_path = os.path.expanduser(args.model_path)

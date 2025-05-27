@@ -15,8 +15,9 @@ from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 import math
 
+import transformers
 # MemVR
-from memvr import apply_memvr_llama
+from memvr import apply_memvr_llama, LlamaMLP
 
 
 def split_list(lst, n):
@@ -85,6 +86,9 @@ def eval_model(args):
     disable_torch_init()
     model_path = os.path.expanduser(args.model_path)
     model_name = get_model_name_from_path(model_path)
+
+    # MemVR init
+    transformers.models.llama.modeling_llama.LlamaMLP = LlamaMLP
 
     tokenizer, model, image_processor, max_length = load_pretrained_model(model_path, args.model_base, model_name, device_map=device)
 
