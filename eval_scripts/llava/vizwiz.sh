@@ -10,7 +10,7 @@ python -m llava.eval.llava_model_vqa_loader \
     --temperature 0 \
     --cuda-device 'cuda:0' \
     --apply-memvr 'memvr' \
-    --retracing-ratio 0.12 \
+    --retracing-ratio 0.28 \
     --entropy-threshold 0.75 \
     --max-new-tokens 1024 \
     --starting-layer 5 \
