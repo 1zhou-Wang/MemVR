@@ -15,7 +15,7 @@ import time
 from memvr import apply_memvr_qwen
 
 # model_path = "../../LLaVA/llava-v1.5-7b"
-model_path = "../../LLaVA/Qwen-VL-Chat"
+model_path = "./Qwen-VL-Chat"
 
 device = "cuda:0"
 

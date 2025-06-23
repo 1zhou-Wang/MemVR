@@ -15,7 +15,7 @@ import time
 from memvr import apply_memvr_glm
 
 # model_path = "../../LLaVA/llava-v1.5-7b"
-model_path = "../../LLaVA/glm-4v-9b"
+model_path = "./glm-4v-9b"
 
 device = "cuda:0"
 

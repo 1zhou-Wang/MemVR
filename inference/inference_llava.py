@@ -14,7 +14,7 @@ import time
 
 from memvr import apply_memvr_llama, LlamaMLP
 
-model_path = "llava-v1.5-7b"
+model_path = "./llava-v1.5-7b"
 
 device = "cuda:0"
 
