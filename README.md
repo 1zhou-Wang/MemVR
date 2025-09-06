@@ -116,10 +116,10 @@ Where
 ## ✏️ Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
 ```
-@article{zou2025memvr,
+@article{zoulook,
   title={Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models}, 
-  author={Xin Zou and Yizhou Wang and Yibo Yan and Yuanhuiyi Lyu and Kening Zheng and Sirui Huang and Junkai Chen and Peijie Jiang and Jia Liu and Chang Tang and Xuming Hu}
-  journal={The Forty-second International Conference on Machine Learning (ICML)},
+  author={Zou, Xin and Wang, Yizhou and Yan, Yibo and Lyu, Yuanhuiyi and Zheng, Kening and Huang, Sirui and Chen, Junkai and Jiang, Peijie and Liu, Jia and Tang, Chang and Hu, Xuming}
+  journal={Forty-second International Conference on Machine Learning (ICML)},
   year={2025}
 }
 ```
