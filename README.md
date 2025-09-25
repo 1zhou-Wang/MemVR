@@ -118,7 +118,7 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
 ```
 @article{zoulook,
   title={Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models}, 
-  author={Zou, Xin and Wang, Yizhou and Yan, Yibo and Lyu, Yuanhuiyi and Zheng, Kening and Huang, Sirui and Chen, Junkai and Jiang, Peijie and Liu, Jia and Tang, Chang and Hu, Xuming}
+  author={Zou, Xin and Wang, Yizhou and Yan, Yibo and Lyu, Yuanhuiyi and Zheng, Kening and Huang, Sirui and Chen, Junkai and Jiang, Peijie and Liu, Jia and Tang, Chang and Hu, Xuming},
   journal={Forty-second International Conference on Machine Learning (ICML)},
   year={2025}
 }
